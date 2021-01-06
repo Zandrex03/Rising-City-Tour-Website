@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+
+.hero{
+    background:gainsboro;
+    height: 100vh;
+    background-image: url(/img/mt\ balagbag.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+.hero.active{
+    background: #555;
+     background-image: url(/img/mt\ balagbag.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+     background-attachment: fixed;
+}
+
+.hero-content{
+    text-align: center;
+}
+
+.title{
+transform: translateY(.2rem);
+}
+
+.hero h1{
+    display: inline;
+    color:gold;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+     position: relative;
+     text-shadow: 1px 1px 1px black ,
+     1px 2px 1px black ,
+     1px 3px 1px black ,
+     1px 4px 1px black ,
+     1px 5px 1px black ;
+}
+
+
+.hero-btn{
+    margin-top: 1rem;
+    width: 5rem;
+    height: 1.5rem;
+    border-radius:10px ;
+    background:	rgb(255,215,0, 0.3);
+    border: 1.5px solid orange ;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover{
+    background: rgb(209, 178, 0);
+}
+
+.hero-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.navbar{
+    margin-top:2rem ;
+     display: flex;
+     justify-content: center;
+}
+
+.nav-links{
+    height: 400px;
+    width: 400px;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    border: 2px solid orange;
+    border-radius: 15px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.nav-links.active{
+    opacity: 1;
+}
+
+.navbar li{
+list-style: none;
+margin: 3rem 0;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.navbar a:hover{
+    color: gold;
+    text-shadow: 0 0 10px gold;
+}
+
+/* about section------------------------------- */
+
+.about-container{
+    margin-top: 4rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-description{
+    margin-bottom: 2rem;
+}
+
+.about-description h1{
+   margin-bottom: 1rem;
+   font-family: 'Kaushan Script', cursive;
+   color: gold;
+   font-size: 4rem;
+   text-shadow: 1px 1px 1px black ,
+   1px 2px 1px black ,
+   1px 3px 1px black ,
+   1px 4px 1px black ,
+   1px 5px 1px black ;
+   text-align: center;
+}
+
+.about-description p{
+padding:0 3rem ;
+margin-bottom: 1.5rem;
+}
+
+/* Tour Section--------------------------------- */
+.tour-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tour-container h1{
+    font-size: 4rem;
+    margin: 5rem 0 2rem 0;
+    font-family: 'Kaushan Script', cursive;
+    color: gold;
+    text-shadow: 1px 1px 1px black ,
+    1px 2px 1px black ,
+    1px 3px 1px black ,
+    1px 4px 1px black ,
+    1px 5px 1px black ;
+    text-align: center;
+}
+
+.tours{
+    display: flex;
+    padding: 0 20px;
+    margin-bottom: 3rem;
+    padding: 0 20px;
+}
+
+.tour-img{
+    width: 50%;
+    height: 301px;
+    overflow: hidden;
+}
+
+.tour-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.tour-img img:hover{
+    transform:scale(1.3);
+    transition: 3s ease;
+}
+
+.tour-details{
+    padding: 2em;
+    border-top: 1px solid orange;
+    border-right: 1px solid orange;
+    border-bottom: 1px solid orange;
+    width: 50%;
+    height: 301px;
+}
+
+.tour-details h3{
+    margin-bottom: 1.2rem;
+}
+
+.tour-details p{
+    margin-bottom: 1.5rem;
+}
+
+.tour-btn{
+    font-size: 1rem;
+    height: 3rem;
+    width: 9rem;
+    border: black solid 1px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+}
+
+.tour-btn span{
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:gold ;
+    z-index: -1;
+    transition:0.5s ;
+}
+
+.tour-btn:hover span{
+    width: 100%;
+}
+
+.tour2{
+    flex-direction: row-reverse;
+}
+
+.tour2 .tour-details{
+    border-top: 1px solid orange;
+    border-left: 1px solid orange;
+    border-bottom: 1px solid orange;
+    border-right: none;
+}
+
+
+
+.load{
+    text-align: center;
+}
+
+.see-btn{
+   padding: 10px 40px;
+   border-radius: 25px;
+   background: gold;
+   border: orange 1px solid ;
+   outline: none;
+}
+
+/* Gallery Section----------------------------- */
+.gallery-container{
+    margin-top: 7rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery-container h1{
+    font-size: 4rem;
+    margin: 5rem 0 2rem 0;
+    font-family: 'Kaushan Script', cursive;
+    color: gold;
+    text-shadow: 1px 1px 1px black ,
+    1px 2px 1px black ,
+    1px 3px 1px black ,
+    1px 4px 1px black ,
+    1px 5px 1px black ;
+    text-align: center;
+}
+
+.image-gallery{
+ display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2vmin;
+grid-auto-flow: dense;
+}
+
+.images{
+position: relative;
+}
+
+.gal-img{
+    width:100%;
+    height: 100%;
+}
+
+.image-details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    opacity: 0;
+    background: rgba(0,0,0,0.5);
+    transition: 0.6s ease;
+    color: white;
+}
+
+.image-details > *{
+    transform: translateY(20px);
+    transition: 0.6s ease;
+}
+
+.image-details:hover > *{
+    transform: translateY(0px);
+}
+
+.image-details:hover{
+opacity: 1;
+}
+
+.image-details h4{
+    margin-bottom: 1rem;
+}
+
+.images:first-child{
+    grid-column-start:span 2 ;
+    grid-row-start: span 2;
+}
+
+/* Book a trip section------------------------------------- */
+
+
+ .form-container{
+     width: 100%;
+     height: 96vh;
+     background-image:url(/img/pexels-kobe-michael-1714456.jpg) ;
+     background-size:cover ;
+     background-position:center ;
+     background-attachment: fixed;
+     margin-top: 8rem;
+ }
+
+ .form-content{
+    width: 80%;
+    margin:0 auto ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .form-container h2{
+     text-align: center;
+     transform: translateY(1rem);
+     font-size: 4rem;
+     font-weight: bold;
+     color:gold;
+     font-family: 'Kaushan Script', cursive;
+     text-shadow: 1px 1px 1px black ,
+                  1px 2px 1px black ,
+                  1px 3px 1px black ,
+                  1px 4px 1px black ,
+                  1px 5px 1px black ;
+ }
+
+ .form{
+     margin-top: 1.5rem;
+     width: 500px;
+     height: 500px;
+     background-color:rgba(255, 255, 255, 0.2) ;
+     border-radius: 2em;
+     backdrop-filter: blur(40px);
+     border: 2px solid transparent;
+     background-clip:padding-box ;
+     padding: 40px 40px 30px 40px;
+     box-shadow: rgba(46,54,68,0.03);
+ }
+
+ label{
+     font-size: 1.1rem;
+     font-weight: bold;
+ }
+
+ input{
+     width: 26rem;
+     height: 2.5rem;
+     border-radius: 10px;
+     border: 2px solid black;
+     background: transparent;
+     margin-top:0.5rem;
+     margin-bottom: 1rem;
+     padding-left:20px ;
+ }
+
+ ::-webkit-input-placeholder{
+     color: black;
+ }
+
+ .number{
+     width: 5rem;
+     height: 2rem;
+ }
+
+.form-div{
+    text-align: center;
+    margin-top:.5rem ;
+}
+
+ .form-btn{
+    padding: 10px 20px;
+    background: gold;
+    border: 1px solid black;
+    font-weight: bold;
+ }
+
+
+ /* footer section-------------------- */
+  footer{
+      margin-top: 9rem;
+      background: #111;
+      color: white;
+  }
+
+  .footer-container{
+      min-height: 50vh;
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .tour-name{
+      width: 25%;
+      padding-top:5rem ;
+  }
+   
+ .touch{
+     width: 25%;
+     padding-top:5rem ;
+ }
+
+ .link{
+     width: 25%;
+     padding-top:5rem ;
+ }
+
+  .footer-container li{
+      list-style:none;
+      cursor: pointer;
+  }
+
+  .footer-container h5{
+      color: gold;
+      padding-bottom: 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+  }
+
+  .tour-name h5{
+    font-family: 'Kaushan Script', cursive;
+    font-size:1.5rem ;
+  }
+
+  .touch li{
+      padding-bottom:1rem ;
+  }
+
+  .link li{
+      padding-bottom: 1rem;
+  }
+
+  .credits{
+      width:80%;
+      margin:0 auto ;
+      display: flex;
+      justify-content: space-between;
+      border-top: 2px solid gold;
+  }
+
+  .credits p{
+      padding: 3rem 0;
+  }
+
+  i{
+      padding-right:1rem ;
+      cursor: pointer;
+      transition: 0.5s ease;
+      color: gold;
+  }
+
+  i:hover{
+      transform: scale(2);
+  }
+
+
+
+
+  /* Media Query-------------------------------------------------- */
+  @media screen and (max-width:1027){
+    .gallery-container{
+        width:90% ;
+        margin: 0 auto;
+    }
+      
+  .image-details h4{
+    font-size: 1rem;
+  }
+      
+  .image-details p{
+    font-size: .5rem;
+  }
+
+}
+  
+  @media screen and (max-width:873px) {
+      
+    .tour-details h3{
+        font-size: 2vw;
+    }
+
+    .tour-details p{
+        font-size: 1.8vw;
+    }
+
+            
+    .image-details h4{
+        font-size: .8rem;
+    }
+        
+    .image-details p{
+        font-size: .5rem;
+    }
+
+}
+
+  @media screen and (max-width:813px) {
+    .footer-container{
+       flex-direction: column;
+  
+    }
+
+    .link{
+        width: 100%;
+    }
+
+    .touch{
+        width: 100%;
+    }
+
+    .tour-name{
+        width: 100%;
+    }
+
+  .credits{
+   flex-direction: column;
+   }
+
+  .credits p{
+   padding:1rem ;
+   }
+
+}
+  
+  @media screen and (max-width:768px) {
+ 
+    .tours{
+    flex-direction: column;
+   }
+
+   .tour-img{
+       width: 100%;
+   }
+
+   .tour-details{
+       width: 100%;
+       border: none;
+       padding: 2em 0 0 0;
+   }
+ 
+    .tour2 .tour-details{
+        border: none;
+    }
+    
+    .tour-details h3{
+       font-size:1rem;
+    }
+    
+    .tour-details p{
+       font-size: 1rem;
+    }
+
+    .image-gallery{
+       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-details h4{
+        font-size: 1rem;
+      }
+          
+      .image-details p{
+        font-size: 1rem;
+      }
+
+}
+  
+  @media screen and (max-width:651px) {
+      
+    .form-container h2{
+        font-size: 9vw;
+    }
+
+}
+  
+  @media screen and (max-width:568px) {
+    .about-description p{
+        padding:0 ;
+     }
+
+    .image-gallery{
+        grid-template-columns: 1fr;
+     }
+     
+     .about-container{
+        margin-top: 1rem;
+    }   
+     
+     .tour-container{
+        margin-top: 1rem;
+    }
+    
+    .tour-container h1{
+        margin: 0 0 2rem 0;
+    }   
+     
+     .gallery-container{
+        margin-top: 1rem;
+    }   
+     
+     .form-container{
+        margin-top: 2rem;
+    }   
+
+}
+  
+  @media screen and (max-width:536px) {
+      
+    .form{
+        width: 400px;
+        height: 430px;
+        padding: 30px;
+    }
+    
+    input{
+        width: 20rem;
+        height: 2rem;
+        border-radius: 10px;
+        border: 2px solid black;
+        background: transparent;
+        margin-top:0.5rem;
+        margin-bottom: 1rem;
+        padding-left:20px ;
+    }
+
+    .con-num{
+        margin-bottom: 0;
+    }
+    .tour-container h1{
+        font-size: 3rem;
+    }
+
+}
+  
+  @media screen and (max-width:427px) {
+    .form-container{
+        height: 80vh;
+    }
+    .form{
+        width: 350px;
+        height: 380px;
+        padding: 30px;
+    }
+
+    input{
+        width: 18rem;
+        height: 1.5rem;
+        border-radius: 10px;
+        border: 2px solid black;
+        background: transparent;
+        margin-top:0.5rem;
+        margin-bottom: 1rem;
+        padding-left:20px ;
+    }
+
+        
+    label{
+        font-size: .8rem;
+        font-weight: bold;
+    }
+
+
+    .number{
+        width: 4rem;
+        height: 1.5rem;
+    }
+
+}
+   
