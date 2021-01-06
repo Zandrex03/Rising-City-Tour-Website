@@ -121,7 +121,6 @@ margin: 3rem 0;
 /* about section------------------------------- */
 
 .about-container{
-    margin-top: 4rem;
     width: 80%;
     margin: 0 auto;
 }
@@ -131,6 +130,7 @@ margin: 3rem 0;
 }
 
 .about-description h1{
+    margin-top: 4rem;
    margin-bottom: 1rem;
    font-family: 'Kaushan Script', cursive;
    color: gold;
@@ -171,7 +171,6 @@ margin-bottom: 1.5rem;
     display: flex;
     padding: 0 20px;
     margin-bottom: 3rem;
-    padding: 0 20px;
 }
 
 .tour-img{
@@ -204,7 +203,7 @@ margin-bottom: 1.5rem;
 }
 
 .tour-details p{
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .tour-btn{
@@ -370,7 +369,7 @@ opacity: 1;
 
  .form{
      margin-top: 1.5rem;
-     width: 500px;
+     max-width: 500px;
      height: 500px;
      background-color:rgba(255, 255, 255, 0.2) ;
      border-radius: 2em;
@@ -387,7 +386,7 @@ opacity: 1;
  }
 
  input{
-     width: 26rem;
+     width: 100%;
      height: 2.5rem;
      border-radius: 10px;
      border: 2px solid black;
@@ -502,11 +501,6 @@ opacity: 1;
 
   /* Media Query-------------------------------------------------- */
   @media screen and (max-width:1027){
-    .gallery-container{
-        width:90% ;
-        margin: 0 auto;
-    }
-      
   .image-details h4{
     font-size: 1rem;
   }
@@ -546,30 +540,48 @@ opacity: 1;
 
     .link{
         width: 100%;
+        padding-top:2rem
     }
+
+    
+  .link li{
+    padding-bottom: 2rem;
+  }
 
     .touch{
         width: 100%;
+        padding-top:3rem
     }
 
     .tour-name{
         width: 100%;
     }
 
-  .credits{
-   flex-direction: column;
-   }
+    .credits{
+    flex-direction: column;
+    }
 
-  .credits p{
-   padding:1rem ;
-   }
-
+    .credits p{
+    padding:1rem ;
+    }
+     
 }
   
   @media screen and (max-width:768px) {
- 
+    .gallery-container{
+        width:90% ;
+        margin: 0 auto;
+    }
+      
+   
+    .tour-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .tours{
     flex-direction: column;
+    padding: 0;
    }
 
    .tour-img{
@@ -580,6 +592,7 @@ opacity: 1;
        width: 100%;
        border: none;
        padding: 2em 0 0 0;
+       height: 100%;
    }
  
     .tour2 .tour-details{
@@ -588,10 +601,12 @@ opacity: 1;
     
     .tour-details h3{
        font-size:1rem;
+       margin-bottom: 1rem;
     }
     
     .tour-details p{
        font-size: 1rem;
+       margin-bottom: 1.5rem;
     }
 
     .image-gallery{
@@ -648,29 +663,24 @@ opacity: 1;
 }
   
   @media screen and (max-width:536px) {
-      
     .form{
-        width: 400px;
-        height: 430px;
-        padding: 30px;
+        height: 450px;
     }
     
     input{
-        width: 20rem;
         height: 2rem;
-        border-radius: 10px;
-        border: 2px solid black;
-        background: transparent;
-        margin-top:0.5rem;
-        margin-bottom: 1rem;
-        padding-left:20px ;
     }
 
     .con-num{
-        margin-bottom: 0;
+        margin-bottom: .5rem;
     }
     .tour-container h1{
         font-size: 3rem;
+    }
+
+    .number{
+        width: 24%;
+        height: 1.5rem;
     }
 
 }
@@ -679,34 +689,51 @@ opacity: 1;
     .form-container{
         height: 80vh;
     }
+
     .form{
-        width: 350px;
-        height: 380px;
+        max-width: 350px;
+        width: 100%;
+        height: 390px;
         padding: 30px;
     }
 
     input{
-        width: 18rem;
-        height: 1.5rem;
-        border-radius: 10px;
-        border: 2px solid black;
-        background: transparent;
-        margin-top:0.5rem;
-        margin-bottom: 1rem;
-        padding-left:20px ;
+        height: 1.8rem;
+        padding-left: 10px;
     }
 
         
     label{
-        font-size: .8rem;
+        font-size: 3.5vw;
         font-weight: bold;
     }
 
 
     .number{
-        width: 4rem;
+        width: 25%;
         height: 1.5rem;
     }
+
+        
+    .form-btn{
+        padding: 5px 15px;
+
+    }
+        
+    .nav-links{
+        max-width: 300px;
+        width: 100%;
+    }
+
+    
+    .image-details h4{
+        font-size: 3vw;
+      }
+          
+      .image-details p{
+        font-size: 3vw;
+      }
+
 
 }
    
