@@ -569,7 +569,7 @@ opacity: 1;
   
   @media screen and (max-width:768px) {
     .gallery-container{
-        width:90% ;
+        width:80% ;
         margin: 0 auto;
     }
       
